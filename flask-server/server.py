@@ -15,6 +15,10 @@ routes.__init__(database)
 
 app = Flask(__name__)
 
+@app.route("/")
+def home():
+    return "<h1>Welcome to RIT Marketplace</h1>\n<p>(not affiliated with Meta in any way)</p>\n"
+
 @app.route("/products")
 def get_products():
     print(datetime.utcnow())
@@ -31,8 +35,11 @@ def members():
 @app.route("/users")
 def get_users():
     return routes.get_users()
-    
 
+@app.route("/all")
+def get_all():
+    return routes.get_all_data()
+    
 
 if __name__=="__main__":
     app.run(debug=True)
