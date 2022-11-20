@@ -10,10 +10,20 @@ def __init__(db):
 def get_products():
     collection = database["Products"]
     all_products = []
-    for product in collection.find({}, {'_id':0, 'contact':0, 'name':0}):
+    for product in collection.find({}, {'contact':0, 'name':0}):
+        product['_id'] = str(product['_id'])
         all_products.append(product)
 
     return all_products
+
+def get_topic(topic, input):
+    collection = database['Products']
+    data = []
+    for d in (collection.find({topic: input}, {'_id':0})):
+        data.append(d)
+    if len(data) == 1:
+        return data[0]
+    return data
 
 def get_users():
     collection = database['Products']

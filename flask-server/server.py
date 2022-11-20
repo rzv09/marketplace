@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "<h1>Welcome to RIT Marketplace</h1>\n<p>(not affiliated with Meta in any way)</p>\n"
+    return "<h1>Welcome to RIT's Student Marketplace</h1>\n<p>(not affiliated with Meta in any way)</p>\n"
 
 @app.route("/products")
 def get_products():
@@ -35,6 +35,13 @@ def members():
 @app.route("/users")
 def get_users():
     return routes.get_users()
+
+@app.route("/users/<name>")
+def get_user(name=None):
+    if name is None:
+        return get_users()
+    return routes.get_topic('name', name)
+
 
 @app.route("/all")
 def get_all():
