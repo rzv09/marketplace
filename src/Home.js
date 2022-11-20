@@ -8,8 +8,10 @@ const Home = () => {
     <Navbar bg="primary" variant="dark" className="justify-content-center">
         <Navbar.Brand>Student Marketplace</Navbar.Brand>
     </Navbar>
+    <div class="grid text-center">
+        <HomeBody/>
     </div>
-
+    </div>
   )
 }
 
