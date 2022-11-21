@@ -6,6 +6,9 @@ import Col from 'react-bootstrap/Col';
 import Stack from 'react-bootstrap/Stack';
 import data from './data.js';
 import './HomeBody.css';
+import imgMap from './images.js';
+
+
 
 function HomeBody() {
       return (
@@ -15,11 +18,12 @@ function HomeBody() {
       {data.map((item, index) => (
         <Col>
                 <Item
-                key={index}
-                id={index}
-                title={item.product.object_name}
-                description={item.product.description}
-                date={item.time_added}
+                    key={index}
+                    id={index}
+                    title={item.product.object_name}
+                    description={item.product.description}
+                    date={item.time_added}
+                    image={imgMap.get(item.product.object_name)}
                 />  
         </Col>
         ))}

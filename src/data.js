@@ -13,7 +13,7 @@ const data = [
         "currency": "USD",
         "description": "A 5-story, 20 bedroom, 10 bathroom house",
         "object_name": "House",
-        "picture": "NA",
+        "picture": "house",
         "price": 1
       },
       "time_added": "11-19-2022 15:25:00 GMT"
@@ -32,7 +32,7 @@ const data = [
         "currency": "USD",
         "description": "Grey futon",
         "object_name": "Futon",
-        "picture": "NA",
+        "picture": "grey_futon",
         "price": 50
       },
       "time_added": "11-19-2022 15:30:00 GMT"
@@ -51,7 +51,7 @@ const data = [
         "currency": "USD",
         "description": "Top of the line crypto wallet with 1 billion dollars worth of etherium",
         "object_name": "Cryptocurrency",
-        "picture": "NA",
+        "picture": "cryptowallet",
         "price": 1000000000
       },
       "time_added": "11-19-2022 15:30:00 GMT"
@@ -70,7 +70,7 @@ const data = [
         "currency": "YEN",
         "description": "A Katana",
         "object_name": "Katana",
-        "picture": "NA",
+        "picture": "katana",
         "price": 140345
       },
       "time_added": "19/11/2022 17:02:48"
@@ -89,7 +89,7 @@ const data = [
         "currency": "USD",
         "description": "A big 'ol dog",
         "object_name": "Dogs",
-        "picture": "NA",
+        "picture": "dog",
         "price": 1000
       },
       "time_added": "11-19-2022 18:25:00 GMT"
@@ -108,7 +108,7 @@ const data = [
         "currency": "USD",
         "description": "GX1975 CT Gaming computer with built in LEDs and stuff",
         "object_name": "PC",
-        "picture": "NA",
+        "picture": "computer",
         "price": 1200
       },
       "time_added": "11-19-2022 17:25:00 GMT"
@@ -127,10 +127,30 @@ const data = [
         "currency": "USD",
         "description": "de diablo",
         "object_name": "Lechuga",
-        "picture": "NA",
+        "picture": "lechuga",
         "price": 40
       },
       "time_added": "11-19-2022 13:25:00 GMT"
+    },
+    {
+      "condition": "used",
+      "contact": {
+        "email": "rz1234@rit.edu",
+        "phone": 1234567890
+      },
+      "last_updated": "11-20-2022 02:25:00 GMT",
+      "location": "Rochester, NY",
+      "name": "Raman",
+      "product": {
+        "category": "Vehicle",
+        "currency": "USD",
+        "description": "2022 Honda Civic",
+        "object_name": "Car",
+        "picture": "2022_Honda_Civic",
+        "price": 2
+      },
+      "time_added": "11-20-2022 02:25:00 GMT"
     }
   ]
+  
 export default data;  
